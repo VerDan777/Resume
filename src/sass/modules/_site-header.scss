@@ -1,0 +1,97 @@
+.site-header {
+    background-color: $bgcolor;
+    height: 200px;
+    margin-bottom: 30px;
+    @include atSmall {
+        height: 400px;
+    }
+    &__wrapper {
+        @include atSmall {
+        text-align: center;
+        } 
+    }
+    &__title {
+        display: inline;
+        background-color: red;
+        color: blue;
+        text-align: center;
+        font-size: 2rem;
+    }
+    &__icon {
+        background-image: url('./img/avatar.jpg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 100px;
+        width: 150px;
+        height: 150px;
+        margin: 15px;
+    }
+    &__contacts {
+       padding-top:55px;
+       padding-bottom:55px; 
+       @include atSmall {
+           padding-left:20px;
+           padding-right: 20px;
+           padding-top:0px; 
+           padding-bottom: 0px;
+        
+       }
+        ul {
+            display: inline-block;
+            padding: 0px;
+            margin: 0px;
+            @include atSmall { 
+            padding-left:20px;
+            padding-right:20px;
+            padding-top:20px; 
+            }
+
+
+            
+        }
+        li {
+          
+            color: $white;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 300;
+            font-size: 1.5rem;
+            list-style-type: none;
+            line-height: 1.72;
+
+        }
+        li:first-child {
+            list-style-image: url("./img/map_pin.png");
+        }
+        li:nth-child(2) {
+            list-style-image: url("./img/globe.png");
+        }
+        li:nth-child(3) {
+            list-style-image: url("./img/phone.png");
+        }
+    }
+    &__fullname {
+        padding-top: 60px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: $white;
+        @include atSmall {
+        padding-top:180px; 
+        text-align: center;
+       
+        }
+    }
+    &__position {
+        padding-left: 0px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 2.0rem;
+        font-weight: bold;
+        color: $white;
+        @include atSmall {
+            text-align: center;
+        }
+    }
+}

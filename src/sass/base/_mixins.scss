@@ -1,0 +1,31 @@
+//adaptive 
+@mixin atSmall {
+    @media(max-width:699px){
+    @content;
+};
+};
+@mixin atTablePortrait {
+@media(min-width:700px) {
+    @content;
+}
+}
+@mixin atTabletLandscape { 
+ @media(min-width:900px) {
+     @content;
+ }
+}
+@mixin atDesktop {
+    @media(min-width:1200px){
+        @content;
+    }
+}
+//clearfix
+@mixin clearfix {
+        &::after{
+            clear: both;
+            content:'';
+            display:table;
+            width: 100%;
+        }
+}
+

@@ -1,0 +1,169 @@
+html {
+  margin: 0px;
+  padding: 0px; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  font-size: 16px;
+  overflow-x: hidden; }
+
+.site-header {
+  background-color: #525ea7;
+  height: 200px;
+  margin-bottom: 30px; }
+  @media (max-width: 699px) {
+    .site-header {
+      height: 400px; } }
+  @media (max-width: 699px) {
+    .site-header__wrapper {
+      text-align: center; } }
+  .site-header__title {
+    display: inline;
+    background-color: red;
+    color: blue;
+    text-align: center;
+    font-size: 2rem; }
+  .site-header__icon {
+    background-image: url("./img/avatar.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 100px;
+    width: 150px;
+    height: 150px;
+    margin: 15px; }
+  .site-header__contacts {
+    padding-top: 55px;
+    padding-bottom: 55px; }
+    @media (max-width: 699px) {
+      .site-header__contacts {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 0px;
+        padding-bottom: 0px; } }
+    .site-header__contacts ul {
+      display: inline-block;
+      padding: 0px;
+      margin: 0px; }
+      @media (max-width: 699px) {
+        .site-header__contacts ul {
+          padding-left: 20px;
+          padding-right: 20px;
+          padding-top: 20px; } }
+    .site-header__contacts li {
+      color: #ffffff;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+      font-size: 1.5rem;
+      list-style-type: none;
+      line-height: 1.72; }
+    .site-header__contacts li:first-child {
+      list-style-image: url("./img/map_pin.png"); }
+    .site-header__contacts li:nth-child(2) {
+      list-style-image: url("./img/globe.png"); }
+    .site-header__contacts li:nth-child(3) {
+      list-style-image: url("./img/phone.png"); }
+  .site-header__fullname {
+    padding-top: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff; }
+    @media (max-width: 699px) {
+      .site-header__fullname {
+        padding-top: 180px;
+        text-align: center; } }
+  .site-header__position {
+    padding-left: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.0rem;
+    font-weight: bold;
+    color: #ffffff; }
+    @media (max-width: 699px) {
+      .site-header__position {
+        text-align: center; } }
+
+.about {
+  background-color: #fdfdfc; }
+  .about__wrapper {
+    padding-top: 30px;
+    padding-bottom: 30px; }
+  .about__title {
+    display: inline-block;
+    text-align: center;
+    color: #313131;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    padding: 15px;
+    margin-top: 3b 0px;
+    font-size: 2.5rem; }
+    @media (min-width: 1200px) {
+      .about__title {
+        padding: 10px; } }
+  .about__text {
+    color: #484747;
+    font-size: 1.6rem;
+    line-height: 1.52;
+    padding: 15px; }
+    .about__text--purple {
+      padding: 0px;
+      font-size: 2rem;
+      font-weight: bold;
+      color: #525ea7; }
+    .about__text--bold {
+      font-weight: 500;
+      font-size: 2rem;
+      padding-top: 15px;
+      padding-bottom: 15px; }
+      @media (min-width: 700px) {
+        .about__text--bold {
+          padding-top: 25px;
+          padding-bottom: 25px; } }
+  .about__img {
+    width: 50px;
+    height: 50px; }
+  .about span {
+    color: #525ea7;
+    font-weight: bold;
+    text-align: center;
+    display: inline; }
+  .about__icon {
+    width: 200px;
+    display: block; }
+  .about__description {
+    margin-top: 50px;
+    padding-top: 55px;
+    padding-bottom: 55px;
+    height: 115px; }
+  .about__vert {
+    height: 100px; }
+  .about__skills ul {
+    padding: 35px;
+    list-style-type: none;
+    display: inline-block; }
+    @media (max-width: 699px) {
+      .about__skills ul {
+        padding-left: 70px;
+        padding-right: 70px; } }
+  .about__skills li {
+    display: inline-block;
+    padding: 15px;
+    margin-top: 60px; }
+  .about__skills span {
+    border: 3px solid #525ea7;
+    border-radius: 200px;
+    padding: 40px;
+    color: #313131;
+    font-size: 3rem;
+    font-weight: bold; }
+  .about__skills p {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #313131; }
+
+.about--nobg {
+  background-color: #ffffff; }
